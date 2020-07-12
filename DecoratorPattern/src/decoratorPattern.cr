@@ -34,13 +34,3 @@ module DecoratorPattern
     end
   end
 end
-
-# def invoke_decorator(member : DecoratorPattern::IDecorator)
-#   p "RESULT: #{member.say}"
-# end
-
-# instance_master = DecoratorPattern::MasterDecorator.new
-# instance_father = DecoratorPattern::FatherDecorator.new instance_master
-# instance_child  = DecoratorPattern::ChildDecorator.new instance_father
-
-# invoke_decorator instance_child
