@@ -1,0 +1,13 @@
+name: StatePattern
+version: 0.1.0
+
+authors:
+  - Agloks
+
+targets:
+  StatePattern:
+    main: src/statePattern.cr
+
+crystal: 0.35.1
+
+license: MIT
