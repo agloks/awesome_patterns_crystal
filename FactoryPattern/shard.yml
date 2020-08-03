@@ -1,0 +1,13 @@
+name: FactoryPattern
+version: 0.1.0
+
+authors:
+  - Agloks
+
+targets:
+  FactoryPattern:
+    main: src/factoryPattern.cr
+
+crystal: 0.35.1
+
+license: MIT
