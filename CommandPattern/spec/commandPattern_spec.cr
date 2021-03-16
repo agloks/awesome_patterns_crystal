@@ -11,7 +11,7 @@ describe CommandPattern do
 
   it "Choice the command in client working" do
     client = CommandPattern::Client.new
-
+    
     client.setterCommand("two")
     /commandTwo/i.match(client.doAnything.not_nil!).should be_truthy
 
