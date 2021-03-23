@@ -45,7 +45,7 @@ module ObserverPattern
       end
     end
 
-    def notify()
+    def notify
       @subs.each do |sub|
         sub.update(self)
       end
@@ -60,21 +60,3 @@ module ObserverPattern
   end
 
 end
-
-pub = ObserverPattern::Publisher.new
-sub1 = ObserverPattern::Subscriber.new
-sub2 = ObserverPattern::Subscriber.new
-
-pub.subscribe(sub1)
-pub.subscribe(sub2)
-pub.unscribe(sub1)
-pub.notify()
-
-p sub1.news
-p sub2.news
-
-pub.subscribe(sub1)
-pub.news = "hihi"
-
-p sub1.news
-p sub2.news
